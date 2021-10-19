@@ -12,11 +12,11 @@ namespace Ex1
         {
             Cat cat = new Cat();
             cat.Name = "Мурка";
-            cat.Say();
+            //cat.Say();
             cat.ShowInfo();
             Dog dog = new Dog();
             dog.Name = "Бобик";
-            dog.Say();
+            //dog.Say();
             dog.ShowInfo();
             Console.ReadKey();
 
@@ -31,7 +31,7 @@ namespace Ex1
 
         public virtual void ShowInfo()
         {
-            Console.WriteLine(Name);
+            Console.Write("{0} ",Name);
             Say();
         }
     }
@@ -53,7 +53,7 @@ namespace Ex1
 
         public override void Say()
         {
-            Console.WriteLine("Мяу");
+            Console.WriteLine("издает звук \"Мяу\"");
         }
 
     }
@@ -72,10 +72,10 @@ namespace Ex1
                 name = value;
             }
         }
-        
+
         public override void Say()
         {
-            Console.WriteLine("Гав");
+            Console.WriteLine("издает звук \"Гав\"");
         }
 
     }
